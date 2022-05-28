@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPIT - projekt</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/navBar.css">
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/contact.css">
+
+    <!-- js -->
+    <script src="../js/navBar.js"></script>
+    <script src="../js/homepage.js"></script>
+</head>
+<body>
+    <div id="navBar">
+        <div id="primaryNavContainer">
+            <img id="imgLogo" src="../img/Algebra-logo.png" alt="Slika">
+            <nav id="primaryNav" class="primaryNav">
+                <a href="../html/homepage.html" class="whiteTextLeftMargin">
+                    <i class="fas fa-home"></i>
+                    Početna
+                </a>
+                <a href="../html/aboutUs.html" class="whiteTextLeftMargin">
+                    <i class="fas fa-comments"></i>
+                    O nama
+                </a>
+                <a href="../html/news.html" class="whiteTextLeftMargin">
+                    <i class="fas fa-info-circle"></i>
+                    Novosti
+                </a>
+                <a href="../html/curriculum.html" class="whiteTextLeftMargin">
+                    <i class="fas fa-info-circle"></i>
+                    Nastavni plan
+                </a>
+                <a href="../html/contact.html" class="whiteTextLeftMargin">
+                    <i class="fas fa-envelope"></i>
+                    Kontakt
+                </a>
+            </nav>
+        </div>
+        <div id="navMenuContainer">
+            <a href="javascript:void(0);" onclick="toggleNavBar()">
+                <i class="fas fa-bars navMenu"></i>
+            </a>
+        </div>
+    </div>
+
+    <div id="videoContainer">
+        <video id="video" src="../video/typingOnlaptop.mp4" autoplay loop muted></video>
+        <div id="typingText">
+            <p id="typingText1"></p>
+            <p id="typingText2"></p>
+        </div>
+    </div>
+
+    <div id="contactFormWindowContainer">
+        <form action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="post" id="contactFormWindow">
+            <div id="contactFormContainer">
+                <h2>
+                    <i class="fas fa-envelope" style="color: aqua;"></i>
+                    Kontaktirajte nas
+                    <hr>
+                </h2>
+                
+                <!-- fullName -->
+                <label for="name">Puno ime:</label> 
+                <input type="text" id="name" name="name">
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+        
+                <!-- importanceSelect -->
+                <label for="importance">Važnost poruke:</label>
+                <select id="importance" name="importance">
+                    <option selected>Visoka</option>
+                    <option>Niska</option>
+                </select>
+        
+                <label for="message">Vaša poruka:</label>
+                <textarea id="message" required name="message"></textarea>
+        
+                <div>
+                    <label for="newsletter">Primaj newsletter</label>
+                    <input type="checkbox" id="newsletter" name="newsletter" unchecked />
+                </div>
+        
+                <div>
+                    <input type="submit" value="Pošalji" class="button blueButton"/>
+                    <a href="../html/homepage.html">
+                        <input type="button" value="Odustani" class="button redButton"/>
+                    </a>
+
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

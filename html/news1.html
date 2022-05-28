@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPIT - projekt</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- js -->
+    <script src="../js/navBar.js"></script>
+    <script src="../js/gallery.js"></script>
+
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/navBar.css">
+    <link rel="stylesheet" href="../css/pageContent.css">
+    <link rel="stylesheet" href="../css/imgWithTextHeader.css">
+    <link rel="stylesheet" href="../css/pageTitle.css">
+    <link rel="stylesheet" href="../css/textParagraph.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/video.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+</head>
+<body>
+    <div id="navBar">
+        <div id="primaryNavContainer">
+            <img id="imgLogo" src="../img/Algebra-logo.png" alt="Slika">
+            <nav id="primaryNav" class="primaryNav">
+                <a href="../html/homepage.html" class="whiteTextLeftMargin">
+                    <i class="fas fa-home"></i>
+                    Početna
+                </a>
+                <a href="../html/aboutUs.html" class="whiteTextLeftMargin">
+                    <i class="fas fa-comments"></i>
+                    O nama
+                </a>
+                <a href="../html/news.html" class="whiteTextLeftMargin">
+                    <i class="fas fa-info-circle"></i>
+                    Novosti
+                </a>
+                <a href="../html/curriculum.html" class="whiteTextLeftMargin">
+                    <i class="fas fa-info-circle"></i>
+                    Nastavni plan
+                </a>
+                <a href="../html/contact.html" class="whiteTextLeftMargin">
+                    <i class="fas fa-envelope"></i>
+                    Kontakt
+                </a>
+            </nav>
+        </div>
+        <div id="navMenuContainer">
+            <a href="javascript:void(0);" onclick="toggleNavBar()">
+                <i class="fas fa-bars navMenu"></i>
+            </a>
+        </div>
+    </div>
+
+    <div id="pageContent">
+        <div id="headerImgContainer">
+            <img id="headerImg" src="../img/novost1.jpg" alt="slika">
+            <p class="centeredTextInHeaderImage">Student Josip Stanešić 12. je sistemaš svijeta i dobitnik medalje izvrsnosti.</p>
+        </div>
+
+        <div class="pageTitleContainer">
+            <h1 class="pageTitle">
+                WorldSkills natjecanje - Kazan 2019.
+                <hr>
+            </h1>
+        </div>
+
+        <div class="subContent1">
+            <p class="differentFont">
+                Nakon godinu dana priprema za natjecanje WorldSkills
+                Kazan 2019 na kojem je sudjelovalo 1300 natjecatelja iz
+                cijelog svijeta, trud se itekako isplatio. Josip,
+                student 3. godine preddiplomskog studija sistemskog
+                inženjerstva osvojio je 12. mjesto u vještini IT
+                Networks and System Administration te osvojio medalju
+                izvrsnosti! Čestitke Josipu ali i njegovim/našim
+                mentorima koji su ga pripremali za ovo natjecanje –
+                voditelju studija sistemskog inženjerstva Silviju
+                Papiću, voditelju katedre za operacijske sustave –
+                Vedranu Dakiću i asistentu na studiju sistemskog
+                inženjerstva – Jasminu Redžepagiću. Čestitke i našem
+                studentu 3.godine preddiplomskog studija programskog
+                inženjerstva Josipu Horvatu i mentoru voditelju katedre
+                za programsko inženjerstvo - Goranu Đambiću na osvojenom
+                16.mjestu u vještini IT Software Solutions for Business.
+            </p>
+        </div>
+
+        <!-- GALERIJA -->
+        <div class="gallery">
+            <a href="../img/galerija1.jpg"  class="fancybox" rel="ligthbox">
+                <img src="../img/galerija1.jpg" class="zoom galleryImg" alt="">
+            </a>
+            <a href="../img/galerija2.jpg"  class="fancybox" rel="ligthbox">
+                <img src="../img/galerija2.jpg" class="zoom galleryImg" alt="">
+            </a>
+        </div>
+
+        <div class="videoContainer">
+            <video src="../video/worldskills.mp4" controls class="video"></video>
+        </div>
+
+        <!-- FOOTER -->
+        <div id="footerContainer">
+            <img id="footerImg" src="../img/zaiskri-bg.jpg" alt="slika">
+            <div class="textCenteredInFooterImage">
+                <p id="sentence">Budi izvrstan u onom što voliš</p>
+                <p id="word">Zaiskri</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+                
+            $(".zoom").hover(function(){
+                
+                $(this).addClass('transition');
+            }, function(){
+                
+                $(this).removeClass('transition');
+            });
+        });
+    </script>
+</body>
+</html>

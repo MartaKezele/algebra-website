@@ -1,0 +1,75 @@
+.pageTitleContainer
+{
+    position: relative;
+    height: 15vh;
+}
+
+.pageTitle
+{
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    animation-name: pageTitleSlideUp;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+hr
+{
+    padding: 0;
+    margin: auto;
+    border: rgb(255, 196, 0) outset;
+}
+
+@keyframes pageTitleSlideUp 
+{
+    from {bottom: 0%;}
+    to {bottom: 25%;}
+}
+
+/* desktop */
+@media only screen and (min-width: 1201px)
+{
+    .pageTitleContainer
+    {
+        height: 15vh;
+    }
+
+    hr
+    {
+        width: 70%;
+    }
+}
+
+/* tablet*/
+@media only screen and (max-width: 1200px)
+{
+    .pageTitleContainer
+    {
+        height: 15vh;
+    }
+
+    hr
+    {
+        width: 100%;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 767px)
+{
+    .pageTitleContainer
+    {
+        height: 20vh;
+    }
+
+    .pageTitle
+    {
+        font-size: 5vw;
+    }
+}

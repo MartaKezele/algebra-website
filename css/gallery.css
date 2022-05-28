@@ -1,0 +1,66 @@
+.gallery
+{
+  margin: 3vh auto;
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.galleryImg
+{
+  object-fit: cover;
+  opacity: 0.6;
+  border-radius: .25vw;
+}
+
+.galleryImg:hover
+{
+  opacity: 1;
+  zoom: 105%;
+}
+  
+img.hoverShadow 
+{
+  transition: 0.3s;
+}
+
+.hoverShadow:hover 
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* desktop */
+@media only screen and (min-width: 1201px)
+{
+  .galleryImg
+  {
+    width: 20vw;
+    height: 10vw;
+  }
+}
+
+/* tablet*/
+@media only screen and (max-width: 1200px)
+{
+  .galleryImg
+  {
+    width: 40vw;
+    height: 25vw;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 767px)
+{
+  .galleryImg
+  {
+    width: 90vw;
+    height: 50vw;
+  }
+}
+ 
+/* .transition 
+{
+  transform: scale(1.03);
+} */

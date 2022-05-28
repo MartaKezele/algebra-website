@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPIT - projekt</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/navBar.css">
+    <link rel="stylesheet" href="../css/pageContent.css">
+    <link rel="stylesheet" href="../css/pageTitle.css">
+    <link rel="stylesheet" href="../css/textParagraph.css">
+    <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <!-- js -->
+    <script src="../js/navBar.js"></script>
+</head>
+<body>
+    <div id="navBar">
+        <div id="primaryNavContainer">
+            <img id="imgLogo" src="../img/Algebra-logo.png" alt="Slika">
+            <nav id="primaryNav" class="primaryNav">
+                <a href="../html/homepage.html" class="whiteTextLeftMargin">
+                    <i class="fas fa-home"></i>
+                    Početna
+                </a>
+                <a href="../html/aboutUs.html" class="whiteTextLeftMargin">
+                    <i class="fas fa-comments"></i>
+                    O nama
+                </a>
+                <a href="../html/news.html" class="whiteTextLeftMargin">
+                    <i class="fas fa-info-circle"></i>
+                    Novosti
+                </a>
+                <a href="../html/curriculum.html" class="whiteTextLeftMargin">
+                    <i class="fas fa-info-circle"></i>
+                    Nastavni plan
+                </a>
+                <a href="../html/contact.html" class="whiteTextLeftMargin">
+                    <i class="fas fa-envelope"></i>
+                    Kontakt
+                </a>
+            </nav>
+        </div>
+        <div id="navMenuContainer">
+            <a href="javascript:void(0);" onclick="toggleNavBar()">
+                <i class="fas fa-bars navMenu"></i>
+            </a>
+        </div>
+    </div>
+
+    <div id="pageContent">
+        <div class="pageTitleContainer">
+            <h1 class="pageTitle">
+                Novosti
+                <hr>
+            </h1>
+        </div>
+
+        <div id="newsContainer">
+            <div id="circleContainer">
+                <a class="circleLink" href="../html/news1.html">
+                    <img class="circleImg" src="../img/novost1.jpg" alt="slika">
+                    <p class="textCenteredInCircle">
+                        <span class="yellowColor">28.08.2019.</span>
+                        <br>
+                        Student Josip Stanešić 12. je sistemaš svijeta i dobitnik medalje izvrsnosti na natjecanju WorldSkills u Kazanu 2019.
+                    </p>
+                </a>
+                <a class="circleLink" href="../html/news2.html">
+                    <img class="circleImg" src="../img/novost2.jpg" alt="slika">
+                    <p class="textCenteredInCircle">
+                        <span class="yellowColor">22.07.2019.</span>
+                        <br>
+                        Nagrađujemo izvrsnost: Objavljujemo dobitnike stipendijskog natječaja šk.god. 2018./2019.
+                    </p>
+                </a>
+                <a class="circleLink" href="../html/news3.html">
+                    <img class="circleImg" src="../img/novost3.jpg" alt="slika">
+                    <p class="textCenteredInCircle">
+                        <span class="yellowColor">18.04.2019.</span>
+                        <br>
+                        Digitalno junior ljeto
+                    </p>
+                </a>
+            </div>
+        </div>
+    
+        <div id="footerContainer">
+            <img id="footerImg" src="../img/zaiskri-bg.jpg" alt="slika">
+            <div class="textCenteredInFooterImage">
+                <p id="sentence">Budi izvrstan u onom što voliš</p>
+                <p id="word">Zaiskri</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

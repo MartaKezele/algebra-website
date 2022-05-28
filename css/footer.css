@@ -1,0 +1,62 @@
+#footerContainer{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+#footerImg
+{
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    position: relative;
+}
+
+.textCenteredInFooterImage
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#sentence
+{
+    color: white;
+}
+
+#word
+{
+    color: orangered;
+}
+
+/* desktop */
+@media only screen and (min-width: 1201px)
+{
+    #footerContainer{
+        height: 30vh;
+        font-size: 2vw;
+    }
+}
+
+/* tablet */
+@media only screen and (max-width: 1201px)
+{
+    #footerContainer{
+        height: 20vh;
+        font-size: 110%;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 767px)
+{
+    #footerContainer{
+        height: 20vh;
+        font-size: 70%;
+    }
+}

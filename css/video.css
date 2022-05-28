@@ -1,0 +1,49 @@
+.videoContainer
+{
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 3vh;
+    display: flex;
+
+}
+
+.video
+{
+    margin: auto;
+}
+
+video:focus
+{
+    outline:  none;
+}
+
+/* desktop */
+@media only screen and (min-width: 1201px)
+{
+    .video
+    {
+        width: 40vw;
+        height: 50vh;
+    }
+}
+
+/* tablet*/
+@media only screen and (max-width: 1200px)
+{
+    .video
+    {
+        width: 70vw;
+        height: 30vh;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 767px)
+{
+    .video
+    {
+        width: 90vw;
+        height: 30vh;
+    }
+}

@@ -1,0 +1,219 @@
+.blueButton
+{
+    background-color: rgb(30, 30, 245, 0.85);
+}
+
+.blueButton:hover
+{
+    background-color: rgb(30, 30, 245, 1);
+}
+
+.redButton
+{
+    margin-left: 1vw;
+    background-color: rgb(230, 30, 30, 0.85);
+}
+
+.redButton:hover
+{
+    background-color: rgb(230, 30, 30, 1);
+}
+
+/* desktop */
+@media only screen and (min-width: 1201px)
+{
+    body
+    {
+        background: rgba(0, 0, 0, 0.95);
+    }
+
+    /* primary navigation */
+    #navBar
+    {
+        opacity: 0.5;
+    }
+
+    /* video container */
+    #videoContainer
+    {
+        opacity: 0.5;
+    }
+
+    /* contact form */
+    #contactFormWindowContainer
+    {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        padding: 1.5%;
+        background-color: white;
+        z-index: 99999;
+        opacity: 1;
+    }
+
+    #contactFormContainer
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50vw;
+        height: 70vh;
+        opacity: 1;
+    }
+
+    hr
+    {
+        margin: 0;
+        padding: 0;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+    }
+
+    h2{
+        margin: 0;
+        padding: 0;
+        font-size: 2vw;
+    }
+
+    label
+    {
+        font-size: 1.5vw;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
+    input[type=text], input[type=email], select, option
+    {
+        width: 100%;
+        height: 4.5vh;
+        font-size: 1.25vw;
+    }
+
+    textarea
+    {
+        font-size: 1.25vw;
+        margin-bottom: 1vh;
+        height: 15vh;
+    }
+
+    input[type=checkbox]
+    {
+        height: 1vw;
+        width: 1vw;
+    }
+
+    .button{
+        color: white;
+        font-weight: bold;
+        margin-top: 1vh;
+        border: none;
+        cursor: pointer;
+        padding: 1vh;
+        font-size: 1.25vw;
+    }
+}
+
+/* tablet & mobile */
+@media only screen and (max-width: 1200px)
+{
+    /* contact form */
+    #contactFormWindowContainer
+    {
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 10vh);
+        padding: 5vw;
+        background-color: white;
+        opacity: 1;
+    }
+
+    #contactFormContainer
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    hr
+    {
+        margin: 0;
+        padding: 0;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+    }
+
+    h2{
+        margin: 0;
+        padding: 0;
+        font-size: 5vw;
+    }
+
+    label
+    {
+        font-size: 4vw;
+        padding-top: 1.5vh;
+        padding-bottom: 1.5vh;
+    }
+
+    input[type=text], input[type=email], select, option
+    {
+        width: 100%;
+        height: 4.5vh;
+        font-size: 3.5vw;
+    }
+
+    textarea
+    {
+        font-size: 3.5vw;
+        margin-bottom: 1vh;
+        height: 30vh;
+    }
+
+    input[type=checkbox]
+    {
+        height: 3vw;
+        width: 3vw;
+    }
+
+    .button{
+        color: white;
+        font-weight: bold;
+        margin-top: 1vh;
+        border: none;
+        cursor: pointer;
+        padding: 1vh;
+        font-size: 3.5vw;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 767px)
+{
+    /* contact form */
+    h2{
+        font-size: 6.5vw;
+    }
+
+    label
+    {
+        font-size: 5.5vw;
+    }
+
+    input[type=text], input[type=email], select, option
+    {
+        font-size: 5vw;
+    }
+
+    textarea
+    {
+        font-size: 5vw;
+    }
+
+    .button{
+        font-size: 5vw;
+    }
+}
